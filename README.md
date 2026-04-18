@@ -18,4 +18,18 @@ This is a responsive food ordering frontend website built using HTML, CSS, JavaS
 - JavaScript
 - Bootstrap
 
+## 📸 Screenshots
+
+![Home](Screenshots/home1.png)
+![Home](Screenshots/home2.png)
+![Home](Screenshots/home3.png)
+![Home](Screenshots/home4.png)
+
+![Menu](Screenshots/menu1.png)
+![Menu](Screenshots/menu2.png)
+![Menu](Screenshots/menu3.png)
+
+![Services](Screenshots/services1.png)
+![Services](Screenshots/services2.png)
+
 
