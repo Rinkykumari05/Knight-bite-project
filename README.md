@@ -1,7 +1,7 @@
 # 🍔 Knight Bites - Food Ordering Website
 
 ## 🚀 Live Demo
-knight-bite-project.netlify.app
+[Click here to view project](https://knight-bite-project.netlify.app)
 
 ## 📌 Description
 This is a responsive food ordering frontend website built using HTML, CSS, JavaScript, and Bootstrap.
@@ -31,5 +31,9 @@ This is a responsive food ordering frontend website built using HTML, CSS, JavaS
 
 ![Services](Screenshots/services1.png)
 ![Services](Screenshots/services2.png)
+
+## ⚙️ How to Run Locally
+1. Clone the repository
+2. Open index.html in your browser
 
 
