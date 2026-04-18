@@ -1,0 +1,1193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    background: rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: palevioletred;
+}
+
+.hero{
+    height: 100vh;
+    padding-top: 90px;
+    background: url(./images/app-link-background.svg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+
+}
+.hero-content h1{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.store-buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.store-buttons img{
+    height: 55px;
+    cursor: pointer;
+}
+
+.store-buttons img:hover{
+    transform: scale(1.05);
+}
+
+.features{
+    padding: 80px 60px;
+    text-align: center;
+    /* background: #fff; */
+}
+.features h2{
+    font-size: 42px;
+    color: #444;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.features-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.feature-item{
+    flex: 1;
+    max-width: 200px;
+}
+
+.feature-item img{
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.feature-item p{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.text-banner{
+    height: 100vh;
+    background: url(./images/banner-1.webp) center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.full-menu-banner{
+    height: 100vh;
+    background: url(./images/banner-2.webp) center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;   /* ✅ REQUIRED */
+}
+
+.full-menu-banner h2{
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+
+
+
+.cta{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%); /* ✅ FIXED */
+}
+
+.cta a{
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cta a:hover{
+    color: black;
+}
+
+
+.connect-section{
+  background:#f2f2f2;
+  padding:70px 80px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.connect-title{
+  text-align:center;
+  font-size:42px;
+  font-weight:300;
+  color:#333;
+  margin-bottom:70px;
+}
+
+.connect-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:60px 100px;
+}
+
+.connect-block h3{
+  font-size:22px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.connect-item{
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+.connect-block p,
+.connect-block li{
+  font-size:16px;
+  color:#444;
+  font-weight:400;
+}
+
+.connect-links{
+  list-style:none;
+  padding:0;
+}
+
+.connect-links a {
+  text-decoration: none;
+  color: inherit;
+  color: red;
+}
+
+.connect-links li{
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+.connect-links .highlight{
+  color:#ff5f87;
+}
+
+.newsletter-text{
+  font-size:16px;
+  line-height:1.7;
+}
+
+.newsletter-box{
+  margin-top:25px;
+  display:flex;
+  border:2px solid #bbb;
+  border-radius:50px;
+  overflow:hidden;
+}
+
+.newsletter-box input{
+  flex:1;
+  border:none;
+  padding:16px 20px;
+  font-size:16px;
+  outline:none;
+}
+
+.newsletter-box button{
+  width:70px;
+  background:#b56cff;
+  border:none;
+  color:white;
+  font-size:24px;
+  cursor:pointer;
+}
+
+.social-icons{
+  display:flex;
+  gap:20px;
+  margin-top:15px;
+}
+
+.social-icons a{
+    display: inline-block;
+}
+
+.social-icons img{
+  width:34px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons img:hover{
+    transform: scale(0.9);
+}
+
+.connect-logos{
+  margin-top:80px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+}
+
+.connect-logos img{
+  height:40px;
+}
+
+.site-copyright{
+  width:100%;
+  padding:18px 0;
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  background:linear-gradient(to right,#b56cff,#ff5f87);
+}
+
+
+
+
+
+
+
+/* about page started here  */
+
+
+
+.about-banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: url('./images/banner.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-banner h1{
+     color: white;
+    font-size: 3.8vw;
+    margin-top: 150px;
+    width: 50vw;
+    padding-left: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 21px;
+    color: #424242;
+}
+
+.grid-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item:nth-child(1) img {
+
+    transform: scale(0.7);
+}
+
+.grid-item:nth-child(3) {
+    justify-content: space-evenly;
+}
+
+.about-grid {
+    margin: 100px 0;
+    row-gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+    column-gap: 40px;
+}
+
+.locations {
+    font-size: 20px;
+}
+
+.locations h1,
+.follow-us h1 {
+    color: #424242;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.locations span {
+    color: #424242;
+    font-weight: 700;
+}
+
+.location {
+    margin-bottom: 24px;
+    margin-right: 30px;
+    color: #424242;
+    font-size: 26px;
+    font-weight: 700;
+    width: fit-content;
+
+}
+
+.profile-tags a {
+    margin-right: 30px;
+}
+
+
+.profile-tags img {
+    transition: all 0.3s ease-out;
+    margin-right: 0 !important;
+}
+
+.profile-tags img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.23);
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+/* MENU PAGE */
+
+.menu-page{
+    min-height:100vh;
+    background:url("./images/banner-menu") center/cover no-repeat;
+    color:#fff;
+}
+
+/* MENU GRID */
+.menu-page .menu-section{
+    padding:100px 80px;
+}
+
+.menu-page .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:80px;
+    text-align:center;
+}
+
+.menu-page .menu-item a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-page .menu-icon{
+    width:90px;
+}
+
+.menu-page h3{
+    margin:15px 0;
+    font-size:22px;
+}
+
+.menu-page .menu-plus{
+    width:30px;
+}
+
+/* POPUP */
+.menu-page .popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.menu-page .popup:target{
+    display:flex;
+}
+
+/* POPUP BOX */
+.menu-page .popup-box{
+    width:80%;
+    max-width:1100px;
+    height:500px;
+    background:#fff;
+    color:#000;
+    display:grid;
+    grid-template-columns:40% 60%;
+    border-radius:8px;
+    overflow:hidden;
+    position:relative;
+}
+
+.menu-page .close{
+    position:absolute;
+    top:15px;
+    right:15px;
+    text-decoration:none;
+    font-size:22px;
+    border:1px solid #000;
+    width:35px;
+    height:35px;
+    text-align:center;
+    line-height:32px;
+    border-radius:50%;
+    color:#000;
+}
+
+
+.menu-page .popup-left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+.menu-page .popup-right{
+    padding:40px;
+    overflow-y:auto;
+}
+
+.menu-page .popup-right h1{
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.menu-page .menu-list p{
+    padding:10px 0;
+    /* border-bottom:1px solid #ddd; */
+    font-size:18px;
+}
+
+
+.menu-page .popup-right::-webkit-scrollbar{
+    width:6px;
+}
+.menu-page .popup-right::-webkit-scrollbar-thumb{
+    background:#999;
+}
+
+
+
+
+/* FRANCHISE PAGE */
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apply-btn {
+    background: #ff5a6e;
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.watch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.watch-btn::before {
+  content: "▶";
+  width: 34px;
+  height: 34px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.watch-btn:hover::before {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+/* .watch-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+} */
+
+.mission {
+  padding: 30px;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+}
+
+.mission p {
+  font-weight: 300;
+  font-size: 21px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.mission h1{
+    font-weight: 700; 
+    margin: 30px; 
+    font-size: 34px
+}
+
+
+.benefits-main {
+    background-color: white;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 2.5rem;
+
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    /*  margin-top: 8rem;  */
+    /* we can give height also here */
+    height: 50%;
+    padding: 20px 20px;
+    
+}
+
+.benefits-main h1{
+    padding-top: 60px;
+}
+
+.benefits h5 {
+    font-size: 20px;
+}
+
+.benefits p{
+    font-size: 21px;
+    margin: 20px auto;
+}
+
+.benefits img {
+    height: 120px;
+    width: 120px;
+}
+
+.benefits-main hr {
+    border: none;
+    height: 3px;
+    background-color: violet;
+}
+
+.kb-franchise-section{
+  background: white;
+  padding:50px 0;
+}
+
+.kb-franchise-header{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.kb-franchise-header h1{
+  font-size:36px;
+  margin-bottom:8px;
+}
+
+.kb-franchise-header p{
+  color:#777;
+}
+
+.kb-franchise-content{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  align-items:flex-start;
+  gap:40px;
+  padding:0 40px;
+}
+
+.kb-franchise-art{
+  flex:1;
+}
+
+.kb-franchise-art img{
+  width:100%;
+}
+
+.kb-franchise-card{
+  width:300px;
+  background:#ececec;
+  border-radius:25px;
+  padding:35px;
+}
+
+.kb-form{
+  background:#ececec;
+}
+
+.kb-field{
+  width:90%;
+  padding:16px;
+  border-radius:20px;
+  border:2px solid transparent;
+  margin-bottom:15px;
+  font-size:15px;
+  outline:none;
+}
+
+/* HTML5 validation */
+
+.kb-textarea{
+  height:90px;
+  resize:none;
+}
+
+.kb-check{
+  display:flex;
+  align-items:center;
+  font-size:14px;
+  margin:15px 0;
+}
+
+.kb-check label{
+  margin-left:8px;
+}
+
+.kb-submit{
+  width:100%;
+  padding:16px;
+  background:#ff4b6e;
+  border:none;
+  border-radius:30px;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.kb-franchise-section hr {
+     border: none;
+    height: 3px;
+    background-color: violet;
+}
+
+
+.franchise-queries{
+  background:#fff;
+  padding-top:60px;
+  text-align:center;
+}
+
+.franchise-line{
+  width:90%;
+  height:3px;
+  background:linear-gradient(to right,#b56cff,#ff5f87);
+  margin:0 auto 50px;
+}
+
+.franchise-title{
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+.franchise-items{
+  display:flex;
+  justify-content:center;
+  gap:120px;
+  margin-bottom:50px;
+}
+
+.franchise-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:18px;
+  text-decoration:none;
+  color:#000;
+}
+
+.franchise-item:hover{
+  color:#ff4b6e;
+}
+
+.franchise-item img{
+  width:35px;
+  height:35px;
+}
+
+.franchise-footer{
+  background:linear-gradient(to right,#b56cff,#ff5f87);
+  color:#fff;
+  padding:18px;
+  font-size:14px;
+}
+
+
+
+@media screen and (min-width: 1px) and (max-width: 576px) {
+
+  /* ---------- NAVBAR ---------- */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .store-buttons img {
+    height: 45px;
+  }
+
+  /* ---------- FEATURES ---------- */
+  .features {
+    padding: 50px 20px;
+  }
+
+  .features h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .feature-item img {
+    height: 140px;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+  }
+
+  /* ---------- TEXT BANNER ---------- */
+  .text-banner {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  /* ---------- FULL MENU BANNER ---------- */
+  .full-menu-banner h2 {
+    font-size: 26px;
+    padding: 0 15px;
+  }
+
+  .cta {
+    bottom: 80px;
+  }
+
+  .cta a {
+    font-size: 18px;
+    padding: 10px 22px;
+  }
+
+  /* ---------- CONNECT SECTION ---------- */
+  .connect-section {
+    padding: 50px 20px;
+  }
+
+  .connect-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .connect-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .connect-block h3 {
+    font-size: 20px;
+  }
+
+  .newsletter-box input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .newsletter-box button {
+    width: 55px;
+    font-size: 20px;
+  }
+
+  /* ---------- SOCIAL & LOGOS ---------- */
+  .social-icons {
+    justify-content: center;
+  }
+
+  .connect-logos {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .connect-logos img {
+    height: 35px;
+  }
+
+  /* media Query end  for index.html */
+
+ /* ---------- ABOUT BANNER ---------- */
+  .about-banner {
+    height: auto;              /* 🔴 FIX */
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+  }
+
+  .about-banner h1 {
+    font-size: 22px;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* ---------- ABOUT GRID ---------- */
+  .about-grid {
+    grid-template-columns: 1fr;   /* 🔴 FIX: 2 → 1 column */
+    padding: 0 20px;              /* 🔴 FIX: 100px → 20px */
+    row-gap: 40px;
+    margin: 60px 0;
+  }
+
+  .grid-item {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-item:nth-child(1) img {
+    transform: scale(1);          /* 🔴 FIX zoom issue */
+  }
+
+  /* ---------- LOCATIONS & FOLLOW ---------- */
+  .locations h1,
+  .follow-us h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .location {
+    font-size: 18px;
+    margin-right: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* ---------- SOCIAL ICONS ---------- */
+  .profile-tags {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .profile-tags a {
+    margin-right: 0;
+  }
+
+  /* ---------- COPYRIGHT ---------- */
+  .copyright {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+
+
+  /* menu - page media query */
+  @media screen and (min-width: 1px) and (max-width: 576px) {
+
+  /* ---------- MENU PAGE ---------- */
+  .menu-page {
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .menu-page .menu-section {
+    padding: 90px 20px 40px;   /* 🔴 FIX huge padding */
+  }
+
+  .menu-page .menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* 🔴 3 → 2 columns */
+    gap: 30px;
+  }
+
+  .menu-page .menu-icon {
+    width: 65px;
+  }
+
+  .menu-page h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .menu-page .menu-plus {
+    width: 22px;
+  }
+
+  /* ---------- POPUP (VERY IMPORTANT) ---------- */
+  .menu-page .popup-box {
+    width: 95%;
+    height: auto;                 /* 🔴 FIX cut content */
+    max-height: 90vh;
+    grid-template-columns: 1fr;   /* 🔴 Side-by-side → stacked */
+  }
+
+  .menu-page .popup-left {
+    height: 180px;
+  }
+
+  .menu-page .popup-right {
+    padding: 20px;
+    max-height: 60vh;
+  }
+
+  .menu-page .popup-right h1 {
+    font-size: 24px;
+  }
+
+  .menu-page .menu-list p {
+    font-size: 15px;
+  }
+
+}
+
+
+/* franchise media query */
+
+/* ---------- HERO ---------- */
+  .hero-content h1 {
+    font-size: 30px;
+    padding: 0 15px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+
+  .apply-btn {
+    font-size: 14px;
+    padding: 12px 26px;
+  }
+
+  /* ---------- MISSION ---------- */
+  .mission {
+    margin: 20px 10px;
+  }
+
+  .mission h1 {
+    font-size: 26px;
+  }
+
+  .mission p {
+    font-size: 16px;
+  }
+
+  /* ---------- BENEFITS ---------- */
+  .benefits {
+    flex-direction: column;   /* 🔴 KEY FIX */
+    gap: 40px;
+  }
+
+  .benefits h5 {
+    font-size: 18px;
+  }
+
+  .benefits p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  /* ---------- FRANCHISE FORM SECTION ---------- */
+  .kb-franchise-content {
+    flex-direction: column;   /* 🔴 IMAGE + FORM STACK */
+    padding: 0 20px;
+  }
+
+  .kb-franchise-card {
+    width: 100%;              /* 🔴 FIX narrow card */
+  }
+
+  .kb-field {
+    width: 100%;
+  }
+
+  /* ---------- FRANCHISE QUERIES ---------- */
+  .franchise-items {
+    flex-direction: column;   /* 🔴 3 items stacked */
+    gap: 35px;
+  }
+
+  .franchise-title {
+    font-size: 26px;
+  }
+
+  .franchise-item {
+    font-size: 16px;
+  }
+
+
+
+}
+
